@@ -1,0 +1,427 @@
+TCalendrical PhoneGap
+v7
+r1
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C8546D90000000000000132
+t1283802841
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004C01F5AE00000000000C05A0
+t1275196846
+s787872
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
+c000000004C01F5AA000000000000065C
+t1275196842
+s1628
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c000000004BFF3B87000000000006F150
+t1275018119
+s454992
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AddressBook.framework/Headers/ABAddressBook.h
+c000000004BFF3B830000000000000A8C
+t1275018115
+s2700
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
+c000000004C04722E0000000000147690
+t1275359790
+s1341072
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AddressBookUI.framework/Headers/AddressBookUI.h
+c000000004C0472220000000000000202
+t1275359778
+s514
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004BFF3B7600000000001C8900
+t1275018102
+s1870080
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioServices.h
+c000000004BFF3B620000000000010A78
+t1275018082
+s68216
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004BFDFE57000000000018BC00
+t1274936919
+s1620992
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004BFF44C00000000000068F90
+t1275020480
+s429968
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h
+c000000004BFF44B600000000000001D0
+t1275020470
+s464
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c000000004C0473250000000000155C80
+t1275360037
+s1399936
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000004BFF3B790000000000055950
+t1275018105
+s350544
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004C0458E90000000000151D30
+t1275353321
+s1383728
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000004BFDFDAA000000000005E690
+t1274936746
+s386704
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UINavigationController.h
+c000000004C0470BB0000000000001971
+t1275359419
+s6513
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITabBar.h
+c000000004C0470BB0000000000000BF1
+t1275359419
+s3057
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIToolbar.h
+c000000004C0470BB0000000000000704
+t1275359419
+s1796
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471620000000001D47210
+t1275359586
+s30700048
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/Contacts.h
+c000000004CC0E2630000000000000ACE
+t1287709283
+s2766
+i<Foundation/Foundation.h>
+i<AddressBook/ABAddressBook.h>
+i<AddressBookUI/AddressBookUI.h>
+i"PhoneGapCommand.h"
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/DebugConsole.h
+c000000004CC0E2630000000000000170
+t1287709283
+s368
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i"PhoneGapCommand.h"
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/JSON.h
+c000000004CC0E26300000000000008F9
+t1287709283
+s2297
+i"SBJSON.h"
+i"NSObject+SBJSON.h"
+i"NSString+SBJSON.h"
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/NSObject+SBJSON.h
+c000000004CC0E2630000000000000A01
+t1287709283
+s2561
+i<Foundation/Foundation.h>
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/NSString+SBJSON.h
+c000000004CC0E2630000000000000916
+t1287709283
+s2326
+i<Foundation/Foundation.h>
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/SBJSON.h
+c000000004CC0E2630000000000000AED
+t1287709283
+s2797
+i<Foundation/Foundation.h>
+i"SBJsonParser.h"
+i"SBJsonWriter.h"
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/SBJsonBase.h
+c000000004CC0E2630000000000000B82
+t1287709283
+s2946
+i<Foundation/Foundation.h>
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/SBJsonParser.h
+c000000004CC0E2630000000000000C0B
+t1287709283
+s3083
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/SBJsonWriter.h
+c000000004CC0E2630000000000001140
+t1287709283
+s4416
+i<Foundation/Foundation.h>
+i"SBJsonBase.h"
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/Location.h
+c000000004CC0E26300000000000005AB
+t1287709283
+s1451
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+i"PhoneGapCommand.h"
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/PhoneGapCommand.h
+c000000004CC0E26300000000000002ED
+t1287709283
+s749
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/PhoneGapDelegate.h
+c000000004CC0E2630000000000000845
+t1287709283
+s2117
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+i<UIKit/UINavigationController.h>
+i"JSON/JSON.h"
+i"Location.h"
+i"Sound.h"
+i"Contacts.h"
+i"DebugConsole.h"
+i"UIControls.h"
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/PhoneGapViewController.h
+c000000004CC0E26300000000000002F6
+t1287709283
+s758
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/Sound.h
+c000000004CC0E2630000000000000704
+t1287709283
+s1796
+i<Foundation/Foundation.h>
+i<AudioToolbox/AudioServices.h>
+i<AVFoundation/AVFoundation.h>
+i"PhoneGapCommand.h"
+
+N/Users/danesummers/Documents/PhoneGapLib/Classes/UIControls.h
+c000000004CC0E263000000000000066A
+t1287709283
+s1642
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<UIKit/UITabBar.h>
+i<UIKit/UIToolbar.h>
+i"PhoneGapCommand.h"
+
+N/Users/danesummers/Documents/PhoneGapLib/VERSION
+c000000004CC0E2630000000000000005
+t1287709283
+s5
+
+N/Users/danesummers/Documents/PhoneGapLib/build/Debug/libPhoneGapLib.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Calendrical_PhoneGap_Prefix.pch
+c000000004CC0E39600000000000000D1
+t1287709590
+s209
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Classes/Calendrical_PhoneGapAppDelegate.h
+c000000004CC0E396000000000000012C
+t1287709590
+s300
+i<UIKit/UIKit.h>
+i"PhoneGapDelegate.h"
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Classes/Calendrical_PhoneGapAppDelegate.m
+c000000004CC0E3960000000000000827
+t1287709590
+s2087
+i"Calendrical_PhoneGapAppDelegate.h"
+i"PhoneGapViewController.h"
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Default.png
+c000000004CC0E3960000000000000BAE
+t1287709590
+s2990
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/PhoneGap.plist
+c000000004CC0E396000000000000027E
+t1287709590
+s638
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/PhoneGapBuildSettings.xcconfig
+c000000004CC0E396000000000000008C
+t1287709590
+s140
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical PhoneGap.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical_PhoneGapAppDelegate.o
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-304B58A110DAC018002A0835.sh
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-30E9A9A110B758320022D3BA.sh
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app.dSYM
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Default.png
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Info.plist
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGap.plist
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGapBuildSettings.xcconfig
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/PkgInfo
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/VERSION
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/icon.png
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/www
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/icon.png
+c000000004CC0E3960000000000000C36
+t1287709590
+s3126
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/main.m
+c000000004CC0E3960000000000000196
+t1287709590
+s406
+i<UIKit/UIKit.h>
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/www
+c000000004CC0E49600000000000000EE
+t1287709846
+s238
+
+N/var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Calendrical_PhoneGap_Prefix-cgcljnwlnmczlpejaicrugyrxqnc/Calendrical_PhoneGap_Prefix.pch.gch
+t2
+s0
+
+NCalendrical_PhoneGap-Info.plist
+c000000004CC0E42B00000000000005BF
+t1287709739
+s1471
+
+CCompileC "build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical_PhoneGapAppDelegate.o" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Classes/Calendrical_PhoneGapAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/main.o" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCopyPlistFile "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGap.plist" PhoneGap.plist
+r0
+
+CCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/Default.png" Default.png
+r0
+
+CCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGapBuildSettings.xcconfig" PhoneGapBuildSettings.xcconfig
+r0
+
+CCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/VERSION" /Users/danesummers/Documents/PhoneGapLib/VERSION
+r0
+
+CCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/icon.png" icon.png
+r0
+
+CCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/www" www
+r0
+
+CGenerateDSYMFile "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app.dSYM" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap"
+r0
+
+CLd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap" normal i386
+r0
+
+CPhaseScriptExecution "Copy PhoneGap Javascript" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-30E9A9A110B758320022D3BA.sh"
+r0
+
+CPhaseScriptExecution "Touch www folder" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-304B58A110DAC018002A0835.sh"
+r0
+
+CProcessInfoPlistFile "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Info.plist" Calendrical_PhoneGap-Info.plist
+r0
+
+CProcessPCH /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Calendrical_PhoneGap_Prefix-cgcljnwlnmczlpejaicrugyrxqnc/Calendrical_PhoneGap_Prefix.pch.gch Calendrical_PhoneGap_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"
+r0
+

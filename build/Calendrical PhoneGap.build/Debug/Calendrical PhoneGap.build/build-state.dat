@@ -1,0 +1,115 @@
+TCalendrical PhoneGap
+v7
+r1
+
+N/Users/danesummers/Documents/PhoneGapLib/VERSION
+c000000004CC0E2630000000000000005
+t1287709283
+s5
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Default.png
+c000000004CC0E3960000000000000BAE
+t1287709590
+s2990
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/PhoneGap.plist
+c000000004CC0E396000000000000027E
+t1287709590
+s638
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/PhoneGapBuildSettings.xcconfig
+c000000004CC0E396000000000000008C
+t1287709590
+s140
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug/Calendrical PhoneGap.build/Script-304B58A110DAC018002A0835.sh
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug/Calendrical PhoneGap.build/Script-30E9A9A110B758320022D3BA.sh
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app/Contents/Info.plist
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app/Contents/Resources/Default.png
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app/Contents/Resources/PhoneGap.plist
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app/Contents/Resources/PhoneGapBuildSettings.xcconfig
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app/Contents/Resources/VERSION
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app/Contents/Resources/icon.png
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app/Contents/Resources/www
+t2
+s0
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/icon.png
+c000000004CC0E3960000000000000C36
+t1287709590
+s3126
+
+N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/www
+c000000004CC0E49600000000000000EE
+t1287709846
+s238
+
+NCalendrical_PhoneGap-Info.plist
+c000000004CC0E42B00000000000005BF
+t1287709739
+s1471
+
+CCopyPlistFile "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app/Contents/Resources/PhoneGap.plist" PhoneGap.plist
+r0
+
+CCpResource "build/Debug/Calendrical PhoneGap.app/Contents/Resources/Default.png" Default.png
+r0
+
+CCpResource "build/Debug/Calendrical PhoneGap.app/Contents/Resources/PhoneGapBuildSettings.xcconfig" PhoneGapBuildSettings.xcconfig
+r0
+
+CCpResource "build/Debug/Calendrical PhoneGap.app/Contents/Resources/VERSION" /Users/danesummers/Documents/PhoneGapLib/VERSION
+r0
+
+CCpResource "build/Debug/Calendrical PhoneGap.app/Contents/Resources/icon.png" icon.png
+r0
+
+CCpResource "build/Debug/Calendrical PhoneGap.app/Contents/Resources/www" www
+r0
+
+CPhaseScriptExecution "Copy PhoneGap Javascript" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug/Calendrical PhoneGap.build/Script-30E9A9A110B758320022D3BA.sh"
+r0
+
+CPhaseScriptExecution "Touch www folder" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug/Calendrical PhoneGap.build/Script-304B58A110DAC018002A0835.sh"
+r0
+
+CProcessInfoPlistFile "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app/Contents/Info.plist" Calendrical_PhoneGap-Info.plist
+r0
+
+CTouch "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug/Calendrical PhoneGap.app"
+r0
+
