@@ -27,6 +27,21 @@
 				width: 100%;
 				-webkit-appearance: textarea;
 			}
+
+			#about {
+				padding: 100px 10px 40px;
+				text-shadow: rgba(255, 255, 255, 0.3) 0px -1px 0;
+				font-size: 13px;
+				text-align: center;
+			}
+			#about p {
+				margin-bottom: 8px;
+			}
+			#about a {
+				color: #fff;
+				font-weight: bold;
+				text-decoration: none;
+			}
 		</style>
 
 		<style type="text/css" media="screen">@import "jqtouch-1.2/jqtouch/jqtouch.min.css";</style>
@@ -44,31 +59,40 @@
 
 		<script type="text/javascript" charset="utf-8">
 			var jQT = $.jQTouch({
+				icon: 'epoch.png'
 			});
 			$(function() {
 					var debug = true;
-					$('#gyear, #gmonth, #gday').change(gregorianfunction);
-					$('#jday').change(julianfunction);
-					$('#julianform').submit(julianfunction);
+
+					$('#gyear, #gmonth, #gday, #gweekday').change(gregorianfunction);
 					$('#gregorianform').submit(gregorianfunction);
 
-					$('#forms').hide();
+					$('#jday, #jweekday').change(julianfunction);
+					$('#julianform').submit(julianfunction);
+
+					$('#mjday, #mjweekday').change(modifiedjulianfunction);
+					$('#modifiedjulianform').submit(modifiedjulianfunction);
+
+					$('#jcyear, #jcmonth, #jcday, #jcweekday').change(juliancalendarfunction);
+					$('#juliancalendarform').submit(juliancalendarfunction);
+
+					// setup the functionality of the different comboboxes, and defaults {{{
 					$('#forms input[type=submit]').hide();
 					makeList($('#convertFrom'),'fromSelection');
 					makeList($('#convertTo'),'toSelection','gregorian');
-					$('#fromSelection').change(function () {
+					$('#convertFrom').change(function () {
 						setForm($('#fromForm'),$('#fromSelection').find(':selected').attr('value'));
 						setAllCalendars(thedate);
 					});
-					$('#toSelection').change(function () {
-						$(this).log("selecting to");
+					$('#convertTo').change(function () {
+						setAllCalendars(thedate);
 					});
 					setForm($('#fromForm'),$('#fromSelection').find(':selected').attr('value'));
 
 					// setup the initial values to today's date:
 					setAllCalendars(thedate);
-					gregorianfunction();
 
+					// }}}
 					if (debug) { // {{{
 						var jspec = JSpec.exec('test/calendrical/spec/unit/spec.js')
 						.run({ fixturePath: 'test/calendrical/spec/fixtures' });
@@ -93,7 +117,7 @@
 		<div id="home">
 			<div class="toolbar">
 				<h1>Epochs</h1>
-				<!--<a href="#info" class="button leftButton flip">Info</a>-->
+				<a href="#about" class="button leftButton flip">About</a>
 				<!--<a href="#add" class="button add slideup">+</a>-->
 			</div>
 			<div id="convertFrom"></div>
@@ -157,19 +181,101 @@
 							<option value="31">31</option>
 						</select></li>
 						<li><input type="number" id="gyear" name="year" placeholder="year"></li>
+						<li><select name="weekday" id="gweekday"></select></li>
 					</ul>
-					<input type="submit" href="#" onclick='return false;'></input>
+					<input type="submit" href="#" />
 				</form>
 			</div><!--}}}-->
 			<div id="julianform"><!--{{{-->
 				<form id="jtime">
 					<ul class="rounded">
 						<li><input type="number" id="jday" name="day" placeholder="day"></li>
+						<li><select name="weekday" id="jweekday"></select></li>
 					</ul>
-					<input type="submit" href="#" onclick='return false;'></input>
+					<input type="submit" href="#" />
+				</form>
+			</div><!--}}}-->
+			<div id="modifiedjulianform"><!--{{{-->
+				<form id="mjtime">
+					<ul class="rounded">
+						<li><input type="number" id="mjday" name="day" placeholder="day"></li>
+						<li><select name="weekday" id="mjweekday"></select></li>
+					</ul>
+					<input type="submit" href="#" />
+				</form>
+			</div><!--}}}-->
+			<div id="juliancalendarform"><!--{{{-->
+				<form id="jctime">
+					<ul class="rounded">
+						<li><select name="month" id="jcmonth">
+							<!--<option value="0.0" selected>(GMT) Western Europe Time</option>-->
+							<option value="1">January</option>
+							<option value="2">Febuary</option>
+							<option value="3">March</option>
+							<option value="4">April</option>
+							<option value="5">May</option>
+							<option value="6">June</option>
+							<option value="7">July</option>
+							<option value="8">August</option>
+							<option value="9">September</option>
+							<option value="10">October</option>
+							<option value="11">November</option>
+							<option value="12">December</option>
+						</select></li>
+						<!-- TODO determine the proper number of days for the given month/year -->
+						<li><select name="day" id="jcday">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select></li>
+						<li><input type="number" id="jcyear" name="year" placeholder="year"></li>
+						<li><select name="weekday" id="jcweekday"></select></li>
+					</ul>
+					<input type="submit" href="#" />
 				</form>
 			</div><!--}}}-->
 		</div>
+		<div id="about" class="selectable"><!--{{{-->
+			<p><img src="epoch.png" /></p>
+			<p><strong>Epochs</strong><br />Version 0.2 beta (Oct 22, 2010)<br /> </p>
+			<p>By <a href="mailto:support@pinedesk.biz">Dane Summers</a></p>
+			<p><br/><em>Convert one era's date to another.</em><br /></p>
+			<p>
+				The laundry list:
+				<ol>
+					<li>copy/paste</li>
+				</ol>
+			</p>
+			<p><br /><br /><a href="#" class="grayButton goback">Close</a></p>
+		</div><!--}}}-->
 	</body>
 	<!-- vim: set fdm=marker ai: -->
 </html>
