@@ -28,3 +28,8 @@ describe 'GUI Things'
 		end
   end
 end
+
+
+// TODO test dates:
+// gregorian: oct 23, 2010 -> Oct 10, 2010 julian calendar -> 2455493 julian -> 55492 modified julian
+// gregorian: may 5, 1752 ->  Apr 24, 1752 julian calendar -> 2361090 julian -> -38911 modified julian

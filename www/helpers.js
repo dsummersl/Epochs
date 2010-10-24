@@ -64,13 +64,16 @@ function tomodifiedjulian(date) {
 	return html;
 }
 function tojuliancalendar(date) {
-	var html = '   <li>'+ $('#jcmonth option:selected').text() +' '+ $('#jcday').val() +', '+ $('#jcyear').val() +'</li>';
+	var j = getJulianDay(date);
+	var weekday = jwday(j);
+	var description = Weekdays[weekday];
+	var html = '   <li>'+ $('#jcmonth option:selected').text() +' '+ $('#jcday').val() +', '+ $('#jcyear').val() +' - '+ description +'</li>';
 	return html;
 }
 //}}}
 // the set functions {{{
 // number of days +/- the weekday to display
-var weekdaywiggle = 5;
+var weekdaywiggle = 20;
 function addWeekdayTags(appendTo,j,descfunc) {
 	var currentjday = j;
 	$(appendTo).children().remove();
