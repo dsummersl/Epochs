@@ -1,11 +1,11 @@
 
-describe 'GUI Things'
+describe 'GUI Things: '
 	before_each
 		appendTo = $(fixture('appendable'))
 		len = calendars.length;
 	end
 
-  describe 'makeList'
+  describe 'the makeList function'
 		it 'show all calendars when none are excluded'
 			makeList(appendTo,'named');
 			appendTo.should.have_tag 'ul'
@@ -29,6 +29,15 @@ describe 'GUI Things'
   end
 end
 
+
+describe 'Dates: '
+	describe 'to human readable types'
+		it 'check hebrew'
+			implementations['hebrew'].toHTML({year:2010, month:10, day:24}).should.eql "<li>5771, Heshvan 16</li>"
+			implementations['hebrew'].toHTML({year:-1238, month:2, day:6}).should.eql "<li>2522, Adar I 16</li>"
+		end
+	end
+end
 
 // TODO test dates:
 // gregorian: oct 23, 2010 -> Oct 10, 2010 julian calendar -> 2455493 julian -> 55492 modified julian

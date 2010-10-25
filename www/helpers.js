@@ -1,28 +1,14 @@
-var calendars = [
-	'gregorian',
-	'julian',
-	'modifiedjulian',
-	'juliancalendar',
-];
-var calendarDescriptions = {
-	gregorian: 'Gregorian',
-	julian: 'Julian',
-	modifiedjulian: 'Modified Julian',
-	juliancalendar: 'Julian Calendar'
-}
-
 var thedate = getTodaysDate();
 
 function makeList(appendTo,name,excludeItem) {
 	var html = '';
 	html += '<ul class="rounded">';
 	html += '	<li><select name="'+ name +'" id="'+ name +'">';
-	var len = calendars.length;
-	for (var i=0; i<len; i++) {
-		if (calendars[i] != excludeItem) {
-			html += '		<option value="'+ calendars[i] +'">'+ calendarDescriptions[calendars[i]] +'</option>';
+	$.each(implementations,function(key,value) {
+		if (key != excludeItem) {
+			html += '		<option value="'+ key +'">'+ value.name +'</option>';
 		}
-	}
+	});
 	html += '	</select></li>';
 	html += '</ul>';
 	$(appendTo).children().remove();
@@ -38,7 +24,7 @@ function setForm(appendTo,calendar) {
 function setResults(appendTo,gregorianDate,calendarType) {
 	var html = '';
 	html += '<ul class="rounded">';
-	html += window['to'+ calendarType](gregorianDate);
+	html += implementations[calendarType].toHTML(gregorianDate);
 	html += '</ul>';
 	var insert = $(html);
 	$(appendTo).children().remove();
@@ -46,34 +32,325 @@ function setResults(appendTo,gregorianDate,calendarType) {
 }
 
 // modify these three sections to add a new date conversion type:
-// to compute functions {{{
-function togregorian(date) {
-	var j = getJulianDay(date);
-	var weekday = jwday(j);
-	var description = Weekdays[weekday];
-	var html = '   <li>'+ $('#gmonth option:selected').text() +' '+ $('#gday').val() +', '+ $('#gyear').val() +' - '+ description +'</li>';
-	return html;
+var implementations = {
+	gregorian: new function() {//{{{
+		this.name = 'Gregorian';
+		this.toHTML = function (date) {
+			var j = gregorian_to_jd(date.year, date.month, date.day);
+			var weekday = jwday(j);
+			var description = Weekdays[weekday];
+			var html = '<li>'+ $('#gmonth option:selected').text() +' '+ $('#gday').val() +', '+ $('#gyear').val() +' - '+ description +'</li>';
+			return html;
+		};
+		this.updateForm = function (gregorianDate) {
+			var j = gregorian_to_jd(gregorianDate.year, gregorianDate.month, gregorianDate.day);
+			$('#gyear').val(gregorianDate.year);
+			$('#gmonth').val(Number(gregorianDate.month));
+			$('#gday').val(gregorianDate.day);
+			addWeekdayTags($('#gweekday'),j,function(i) {
+				var weekday = jwday(i);
+				var description = Weekdays[weekday];
+				var gd = jd_to_gregorian(i);
+				return gd[2] +' | '+ description;
+			});
+		};
+		this.updateFromHTML = function() {
+			var gd;
+			var j = gregorian_to_jd(thedate.year, thedate.month, thedate.day);
+			if ($('#gyear').val() == thedate.year && $('#gmonth').val() == thedate.month && $('#gday').val() == thedate.day && $('#gweekday[value]').val() != j) {
+				// the weekday changed, recompute from this julian day
+				gd = jd_to_gregorian($('#gweekday').val());
+			}
+			else {
+				gd = Array(Number($('#gyear').val()),Number($('#gmonth').val()),Number($('#gday').val()));
+			}
+			var gregorian = {
+				year:gd[0],
+				month:gd[1],
+				day:gd[2],
+				hour:0,
+				min:0,
+				sec:0
+				};
+			setAllCalendars(gregorian);
+			return false;
+		};
+	},//}}}
+	julian: new function() {//{{{
+		this.name = 'Julian';
+		this.toHTML = function (date) {
+			var html = '<li>'+ $('#jday').val() +'</li>';
+			return html;
+		};
+		this.updateForm = function (gregorianDate) {
+			var julian = gregorian_to_jd(gregorianDate.year, gregorianDate.month, gregorianDate.day);
+			$('#jday').val(julian);
+			addWeekdayTags($('#jweekday'),julian,jDesc);
+		};
+		this.updateFromHTML = function () {
+			var gd;
+			var newgreg = jd_to_gregorian($('#jday').val());
+			if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jweekday[value]').val() != $('#jday').val()) {
+				gd = jd_to_gregorian($('#jweekday').val());
+			}
+			else {
+				gd = newgreg;
+			}
+			var gregorian = {
+				year:gd[0],
+				month:gd[1],
+				day:gd[2],
+				hour:0,
+				min:0,
+				sec:0
+				};
+			setAllCalendars(gregorian);
+			return false;
+		};
+	},//}}}
+	modifiedjulian: new function() {//{{{
+		this.name = 'Modified Julian';
+		this.toHTML = function (date) {
+			var html = '<li>'+ $('#mjday').val() +'</li>';
+			return html;
+		};
+		this.updateForm = function(gregorianDate) {
+			var julian = gregorian_to_jd(gregorianDate.year, gregorianDate.month, gregorianDate.day);
+			var modifiedjulian = julian - JMJD;
+			$('#mjday').val(modifiedjulian);
+			addWeekdayTags($('#mjweekday'),julian,mjDesc);
+		};
+		this.updateFromHTML = function() {
+			var newgreg = jd_to_gregorian(Number($('#mjday').val())+JMJD);
+			if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#mjweekday[value]').val() != $('#mjday').val()) {
+				gd = jd_to_gregorian($('#mjweekday').val());
+			}
+			else {
+				gd = newgreg;
+			}
+			var gregorian = {
+				year:gd[0],
+				month:gd[1],
+				day:gd[2],
+				hour:0,
+				min:0,
+				sec:0
+				};
+			setAllCalendars(gregorian);
+			return false;
+		};
+	},//}}}
+	juliancalendar: new function() {//{{{
+		this.name = 'Julian Calendar';
+		this.toHTML = function (date) {
+			var j = gregorian_to_jd(date.year, date.month, date.day);
+			var weekday = jwday(j);
+			var description = Weekdays[weekday];
+			var html = '<li>'+ $('#jcmonth option:selected').text() +' '+ $('#jcday').val() +', '+ $('#jcyear').val() +' - '+ description +'</li>';
+			return html;
+		};
+		this.updateForm = function (gregorianDate) {
+			var julian = gregorian_to_jd(gregorianDate.year, gregorianDate.month, gregorianDate.day);
+			var julcal = jd_to_julian(julian);
+			$('#jcyear').val(julcal[0]);
+			$('#jcmonth').val(Number(julcal[1]));
+			$('#jcday').val(julcal[2]);
+			addWeekdayTags($('#jcweekday'),julian,jcDesc);
+		};
+		this.updateFromHTML = function() {
+			var julianday = julian_to_jd(Number($('#jcyear').val()),Number($('#jcmonth').val()),Number($('#jcday').val()));
+			var newgreg = jd_to_gregorian(julianday);
+			if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jcweekday[value]').val() != julianday) {
+				gd = jd_to_gregorian($('#jcweekday').val());
+			}
+			else {
+				gd = newgreg;
+			}
+			var gregorian = {
+				year:gd[0],
+				month:gd[1],
+				day:gd[2],
+				hour:0,
+				min:0,
+				sec:0
+				};
+			setAllCalendars(gregorian);
+			return false;
+		};
+	},//}}}
+	hebrew: new function() {//{{{
+		this.name = 'Hebrew';
+		this.toHTML = function (date) {
+			var julian = gregorian_to_jd(date.year, date.month, date.day);
+			var hebcal = jd_to_hebrew(julian);
+			var monthnumber = hebcal[1];
+			var month = $('#hmonth option[value="'+ monthnumber +'"]').log("monthnum = "+ monthnumber +" and year is "+ date.year +" which is leap?" + hebrew_leap(hebcal[0])).text();
+			if (hebrew_leap(hebcal[0])) {
+				if (monthnumber == 12) {
+					month = "Adar I";
+				}
+				if (monthnumber == 13) {
+					month == "Veadar";
+				}
+			}
+			var html = '<li>'+ hebcal[0] +', '+ month +' '+ hebcal[2] +'</li>';
+			return html;
+		};
+		this.updateForm = function (gregorianDate) {
+			var julian = gregorian_to_jd(gregorianDate.year, gregorianDate.month, gregorianDate.day);
+			var hcal = jd_to_hebrew(julian);
+			$('#hyear').val(hcal[0]);
+			$('#hmonth').val(Number(hcal[1]));
+			$('#hday').val(hcal[2]);
+			// TODO update the days in the month correctly.
+			//addWeekdayTags($('#jcweekday'),julian,frDesc);
+		};
+		this.updateFromHTML = function() {
+			var julianday = hebrew_to_jd(Number($('#hyear').val()),Number($('#hmonth').val()),Number($('#hday').val()));
+			var newgreg = jd_to_gregorian(julianday);
+			//if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jcweekday[value]').val() != julianday) {
+				//gd = jd_to_gregorian($('#jcweekday').val());
+			//}
+			//else {
+				gd = newgreg;
+			//}
+			var gregorian = {
+				year:gd[0],
+				month:gd[1],
+				day:gd[2],
+				hour:0,
+				min:0,
+				sec:0
+				};
+			setAllCalendars(gregorian);
+			return false;
+		};
+	},//}}}
+	islamic: new function() {//{{{
+		this.name = 'Islamic';
+		this.toHTML = function (date) {
+			var julian = gregorian_to_jd(date.year, date.month, date.day);
+			var ical = jd_to_islamic(julian);
+			var monthnumber = ical[1];
+			var month = $('#imonth option[value="'+ monthnumber +'"]').log("monthnum = "+ monthnumber +" and year is "+ date.year +" which is leap?" + hebrew_leap(ical[0])).text();
+			var html = '<li>'+ ical[2] +', '+ month +' '+ ical[0] +'</li>';
+			return html;
+		};
+		this.updateForm = function (gregorianDate) {
+			var julian = gregorian_to_jd(gregorianDate.year, gregorianDate.month, gregorianDate.day);
+			var hcal = jd_to_islamic(julian);
+			$('#iyear').val(hcal[0]);
+			$('#imonth').val(Number(hcal[1]));
+			$('#iday').val(hcal[2]);
+			// TODO update the days in the month correctly.
+			//addWeekdayTags($('#jcweekday'),julian,frDesc);
+		};
+		this.updateFromHTML = function() {
+			var julianday = islamic_to_jd(Number($('#iyear').val()),Number($('#imonth').val()),Number($('#iday').val()));
+			var newgreg = jd_to_gregorian(julianday);
+			//if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jcweekday[value]').val() != julianday) {
+				//gd = jd_to_gregorian($('#jcweekday').val());
+			//}
+			//else {
+				gd = newgreg;
+			//}
+			var gregorian = {
+				year:gd[0],
+				month:gd[1],
+				day:gd[2],
+				hour:0,
+				min:0,
+				sec:0
+				};
+			setAllCalendars(gregorian);
+			return false;
+		};
+	},//}}}
+	persian: new function() {//{{{
+		this.name = 'Persian';
+		this.toHTML = function (date) {
+			var julian = gregorian_to_jd(date.year, date.month, date.day);
+			var ical = jd_to_persiana(julian);
+			var monthnumber = ical[1];
+			var month = $('#pmonth option[value="'+ monthnumber +'"]').log("monthnum = "+ monthnumber +" and year is "+ date.year +" which is leap?" + hebrew_leap(ical[0])).text();
+			var html = '<li>'+ ical[2] +', '+ month +' '+ ical[0] +'</li>';
+			return html;
+		};
+		this.updateForm = function (gregorianDate) {
+			var julian = gregorian_to_jd(gregorianDate.year, gregorianDate.month, gregorianDate.day);
+			var hcal = jd_to_persiana(julian);
+			$('#pyear').val(hcal[0]);
+			$('#pmonth').val(Number(hcal[1]));
+			$('#pday').val(hcal[2]);
+			// TODO update the days in the month correctly.
+			//addWeekdayTags($('#jcweekday'),julian,frDesc);
+		};
+		this.updateFromHTML = function() {
+			var julianday = persiana_to_jd(Number($('#pyear').val()),Number($('#pmonth').val()),Number($('#pday').val()));
+			var newgreg = jd_to_gregorian(julianday);
+			//if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jcweekday[value]').val() != julianday) {
+				//gd = jd_to_gregorian($('#jcweekday').val());
+			//}
+			//else {
+				gd = newgreg;
+			//}
+			var gregorian = {
+				year:gd[0],
+				month:gd[1],
+				day:gd[2],
+				hour:0,
+				min:0,
+				sec:0
+				};
+			setAllCalendars(gregorian);
+			return false;
+		};
+	},//}}}
+	indian: new function() {//{{{
+		this.name = 'Indian Civil';
+		this.toHTML = function (date) {
+			var julian = gregorian_to_jd(date.year, date.month, date.day);
+			var ical = jd_to_indian_civil(julian);
+			var monthnumber = ical[1];
+			var month = $('#icmonth option[value="'+ monthnumber +'"]').log("monthnum = "+ monthnumber +" and year is "+ date.year +" which is leap?" + hebrew_leap(ical[0])).text();
+			var html = '<li>'+ ical[2] +', '+ month +' '+ ical[0] +'</li>';
+			return html;
+		};
+		this.updateForm = function (gregorianDate) {
+			var julian = gregorian_to_jd(gregorianDate.year, gregorianDate.month, gregorianDate.day);
+			var hcal = jd_to_indian_civil(julian);
+			$('#icyear').val(hcal[0]);
+			$('#icmonth').val(Number(hcal[1]));
+			$('#icday').val(hcal[2]);
+			// TODO update the days in the month correctly.
+			//addWeekdayTags($('#jcweekday'),julian,frDesc);
+		};
+		this.updateFromHTML = function() {
+			var julianday = indian_civil_to_jd(Number($('#icyear').val()),Number($('#icmonth').val()),Number($('#icday').val()));
+			var newgreg = jd_to_gregorian(julianday);
+			//if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jcweekday[value]').val() != julianday) {
+				//gd = jd_to_gregorian($('#jcweekday').val());
+			//}
+			//else {
+				gd = newgreg;
+			//}
+			var gregorian = {
+				year:gd[0],
+				month:gd[1],
+				day:gd[2],
+				hour:0,
+				min:0,
+				sec:0
+				};
+			setAllCalendars(gregorian);
+			return false;
+		};
+	},//}}}
 }
-function tojulian(date) {
-	var html = '   <li>'+ $('#jday').val() +'</li>';
-	return html;
-}
-var JMJD  = 2400000.5;                // Epoch of Modified Julian Date system
-function tomodifiedjulian(date) {
-	var html = '   <li>'+ $('#mjday').val() +'</li>';
-	return html;
-}
-function tojuliancalendar(date) {
-	var j = getJulianDay(date);
-	var weekday = jwday(j);
-	var description = Weekdays[weekday];
-	var html = '   <li>'+ $('#jcmonth option:selected').text() +' '+ $('#jcday').val() +', '+ $('#jcyear').val() +' - '+ description +'</li>';
-	return html;
-}
-//}}}
+
 // the set functions {{{
 // number of days +/- the weekday to display
-var weekdaywiggle = 20;
+var weekdaywiggle = 15;
 function addWeekdayTags(appendTo,j,descfunc) {
 	var currentjday = j;
 	$(appendTo).children().remove();
@@ -85,12 +362,6 @@ function addWeekdayTags(appendTo,j,descfunc) {
 			$(appendTo).append('<option value="'+ i +'">'+ descfunc(i) +'</option>');
 		}
 	}
-}
-var gregDesc = function(i) {
-	var weekday = jwday(i);
-	var description = Weekdays[weekday];
-	var gd = jd_to_gregorian(i);
-	return gd[2] +' | '+ description;
 }
 var jDesc = function(i) {
 	var weekday = jwday(i);
@@ -109,127 +380,17 @@ var jcDesc = function(i) {
 	var julcal = jd_to_julian(i);
 	return julcal[2] +' | '+ description;
 }
-function getJulianDay(gregorianDate) {
-	return gregorian_to_jd(gregorianDate.year, gregorianDate.month, gregorianDate.day) + (Math.floor(gregorianDate.sec + 60 * (gregorianDate.min + 60 * gregorianDate.hour) + 0.5) / 86400.0);
+var frDesc = function(i) {
+	return "GODO";
 }
 function setAllCalendars(gregorianDate) {
-	var len = calendars.length;
-	for (var i=0; i<len; i++) {
-		window['set'+ calendars[i]](gregorianDate);
-	}
+	$.each(implementations,function(key,value) {
+		value.updateForm(gregorianDate);
+	});
 	setResults($('#results'),gregorianDate,$('#toSelection').find(':selected').attr('value'));
 	thedate = gregorianDate;
 }
-function setgregorian(gregorianDate) {
-	var j = getJulianDay(gregorianDate);
-	$('#gyear').val(gregorianDate.year);
-	$('#gmonth').val(Number(gregorianDate.month));
-	$('#gday').val(gregorianDate.day);
-	addWeekdayTags($('#gweekday'),j,gregDesc);
-}
-function setjulian(gregorianDate) {
-	var julian = getJulianDay(gregorianDate);
-	$('#jday').val(julian);
-	addWeekdayTags($('#jweekday'),julian,jDesc);
-}
-function setmodifiedjulian(gregorianDate) {
-	var julian = getJulianDay(gregorianDate);
-	var modifiedjulian = julian - JMJD;
-	$('#mjday').val(modifiedjulian);
-	addWeekdayTags($('#mjweekday'),julian,mjDesc);
-}
-function setjuliancalendar(gregorianDate) {
-	var julian = getJulianDay(gregorianDate);
-	var julcal = jd_to_julian(julian);
-	$('#jcyear').val(julcal[0]);
-	$('#jcmonth').val(Number(julcal[1]));
-	$('#jcday').val(julcal[2]);
-	addWeekdayTags($('#jcweekday'),julian,jcDesc);
-}
 //}}}
-// handlers for various types {{{
-function gregorianfunction() {
-	var gd;
-	var j = getJulianDay(thedate);
-	if ($('#gyear').val() == thedate.year && $('#gmonth').val() == thedate.month && $('#gday').val() == thedate.day && $('#gweekday[value]').val() != j) {
-		// the weekday changed, recompute from this julian day
-		gd = jd_to_gregorian($('#gweekday').val());
-	}
-	else {
-		gd = Array(Number($('#gyear').val()),Number($('#gmonth').val()),Number($('#gday').val()));
-	}
-	var gregorian = {
-		year:gd[0],
-		month:gd[1],
-		day:gd[2],
-		hour:0,
-		min:0,
-		sec:0
-		};
-	setAllCalendars(gregorian);
-	return false;
-}
-function julianfunction() {
-	var gd;
-	var newgreg = jd_to_gregorian($('#jday').val());
-	if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jweekday[value]').val() != $('#jday').val()) {
-		gd = jd_to_gregorian($('#jweekday').val());
-	}
-	else {
-		gd = newgreg;
-	}
-	var gregorian = {
-		year:gd[0],
-		month:gd[1],
-		day:gd[2],
-		hour:0,
-		min:0,
-		sec:0
-		};
-	setAllCalendars(gregorian);
-	return false;
-}
-function modifiedjulianfunction() {
-	var newgreg = jd_to_gregorian(Number($('#mjday').val())+JMJD);
-	if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#mjweekday[value]').val() != $('#mjday').val()) {
-		gd = jd_to_gregorian($('#mjweekday').val());
-	}
-	else {
-		gd = newgreg;
-	}
-	var gregorian = {
-		year:gd[0],
-		month:gd[1],
-		day:gd[2],
-		hour:0,
-		min:0,
-		sec:0
-		};
-	setAllCalendars(gregorian);
-	return false;
-}
-function juliancalendarfunction() {
-	var julianday = julian_to_jd(Number($('#jcyear').val()),Number($('#jcmonth').val()),Number($('#jcday').val()));
-	var newgreg = jd_to_gregorian(julianday);
-	if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jcweekday[value]').val() != julianday) {
-		gd = jd_to_gregorian($('#jcweekday').val());
-	}
-	else {
-		gd = newgreg;
-	}
-	var gregorian = {
-		year:gd[0],
-		month:gd[1],
-		day:gd[2],
-		hour:0,
-		min:0,
-		sec:0
-		};
-	setAllCalendars(gregorian);
-	return false;
-}
-//}}}
-
 // Date related functions {{{
 // Get today's date in gregorian
 function getTodaysDate() {

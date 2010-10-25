@@ -65,17 +65,29 @@
 			$(function() {
 					var debug = true;
 
-					$('#gyear, #gmonth, #gday, #gweekday').change(gregorianfunction);
-					$('#gregorianform').submit(gregorianfunction);
+					$('#gyear, #gmonth, #gday, #gweekday').change(implementations['gregorian'].updateFromHTML);
+					$('#gregorianform').submit(implementations['gregorian'].updateFromHTML);
 
-					$('#jday, #jweekday').change(julianfunction);
-					$('#julianform').submit(julianfunction);
+					$('#jday, #jweekday').change(implementations['julian'].updateFromHTML);
+					$('#julianform').submit(implementations['julian'].updateFromHTML);
 
-					$('#mjday, #mjweekday').change(modifiedjulianfunction);
-					$('#modifiedjulianform').submit(modifiedjulianfunction);
+					$('#mjday, #mjweekday').change(implementations['modifiedjulian'].updateFromHTML);
+					$('#modifiedjulianform').submit(implementations['modifiedjulian'].updateFromHTML);
 
-					$('#jcyear, #jcmonth, #jcday, #jcweekday').change(juliancalendarfunction);
-					$('#juliancalendarform').submit(juliancalendarfunction);
+					$('#jcyear, #jcmonth, #jcday, #jcweekday').change(implementations['juliancalendar'].updateFromHTML);
+					$('#juliancalendarform').submit(implementations['juliancalendar'].updateFromHTML);
+
+					$('#hyear, #hmonth, #hday, #hweekday').change(implementations['hebrew'].updateFromHTML);
+					$('#hebrewform').submit(implementations['hebrew'].updateFromHTML);
+
+					$('#iyear, #imonth, #iday, #iweekday').change(implementations['islamic'].updateFromHTML);
+					$('#islamicform').submit(implementations['islamic'].updateFromHTML);
+
+					$('#pyear, #pmonth, #pday, #pweekday').change(implementations['persian'].updateFromHTML);
+					$('#persianform').submit(implementations['persian'].updateFromHTML);
+
+					$('#icyear, #icmonth, #icday, #icweekday').change(implementations['indian'].updateFromHTML);
+					$('#indianform').submit(implementations['persian'].updateFromHTML);
 
 					// setup the functionality of the different comboboxes, and defaults {{{
 					$('#forms input[type=submit]').hide();
@@ -263,6 +275,119 @@
 					<input type="submit" href="#" />
 				</form>
 			</div><!--}}}-->
+			<div id="hebrewform"><!--{{{-->
+				<form id="htime">
+					<ul class="rounded">
+						<li><select name="month" id="hmonth">
+							<option value="1">Nisan</option>
+							<option value="2">Iyar</option>
+							<option value="3">Sivan</option>
+							<option value="4">Tammuz</option>
+							<option value="5">Av</option>
+							<option value="6">Elul</option>
+							<option value="7">Tishri</option>
+							<option value="8">Heshvan</option>
+							<option value="9">Kislev</option>
+							<option value="10">Teveth</option>
+							<option value="11">Shevat</option>
+							<option value="12">Adar</option>
+							<option value="13">Veadar</option>
+							<!--
+							<option value="1">Nisan (נִיסָן‎)</option>
+							<option value="2">Iyar (אִייָר)</option>
+							<option value="3">Sivan (סִיוָן)</option>
+							<option value="4">Tammuz (תמוז)</option>
+							<option value="5">Av (אָב)</option>
+							<option value="6">Elul (אֱלוּל)</option>
+							<option value="7">Tishri (תִּשְׁרִי)</option>
+							<option value="8">Cheshvan (חֶשְׁוָן)</option>
+							<option value="9">Kislev ( (כִּסְלֵו)</option>
+							<option value="10">Teveth (טֵבֵת)</option>
+							<option value="11">Shevat (שְׁבָט)</option>
+							<option value="12">Adar (אֲדָר)</option>
+							<option value="13">Veadar </option>
+							-->
+						</select></li>
+						<!-- TODO determine the proper number of days for the given month/year -->
+						<li><input type="number" id="hday" name="day" placeholder="day"></li>
+						<li><input type="number" id="hyear" name="year" placeholder="year"></li>
+						<!--<li><select name="weekday" id="hweekday"></select></li>-->
+					</ul>
+					<input type="submit" href="#" />
+				</form>
+			</div><!--}}}-->
+			<div id="islamicform"><!--{{{-->
+				<form id="itime">
+					<ul class="rounded">
+						<li><select name="month" id="imonth">
+							<option value="1">Muharram</option>
+							<option value="2">Safar</option>
+							<option value="3">Rabi`al-Awwal</option>
+							<option value="4">Rabi`ath-Thani</option>
+							<option value="5">Jumada l-Ula</option>
+							<option value="6">Jumada t-Tania</option>
+							<option value="7">Rajab</option>
+							<option value="8">Sha`ban</option>
+							<option value="9">Ramadan</option>
+							<option value="10">Shawwal</option>
+							<option value="11">Dhu l-Qa`da</option>
+							<option value="12">Dhu l-Hijja</option>
+						</select></li>
+						<li><input type="number" id="iday" name="day" placeholder="day"></li>
+						<li><input type="number" id="iyear" name="year" placeholder="year"></li>
+						<!--<li><select name="weekday" id="hweekday"></select></li>-->
+					</ul>
+					<input type="submit" href="#" />
+				</form>
+			</div><!--}}}-->
+			<div id="persianform"><!--{{{-->
+				<form id="ptime">
+					<ul class="rounded">
+						<li><select name="month" id="pmonth">
+							<option value="1">Farvardin</option>
+							<option value="2">Ordibehesht</option>
+							<option value="3">Khordad</option>
+							<option value="4">Tir</option>
+							<option value="5">Mordad</option>
+							<option value="6">Shahrivar</option>
+							<option value="7">Mehr</option>
+							<option value="8">Aban</option>
+							<option value="9">Azar</option>
+							<option value="10">Dey</option>
+							<option value="11">Bahman</option>
+							<option value="12">Esfand</option>
+						</select></li>
+						<li><input type="number" id="pday" name="day" placeholder="day"></li>
+						<li><input type="number" id="pyear" name="year" placeholder="year"></li>
+						<!--<li><select name="weekday" id="pweekday"></select></li>-->
+					</ul>
+					<input type="submit" href="#" />
+				</form>
+			</div><!--}}}-->
+			<div id="indianform"><!--{{{-->
+				<form id="ictime">
+					<ul class="rounded">
+						<li><select name="month" id="icmonth">
+							<option value="1">Caitra</option>
+							<option value="2">Vaisakha</option>
+							<option value="3">Jyaistha</option>
+							<option value="4">Asadha</option>
+							<option value="5">Sravana</option>
+							<option value="6">Bhadra</option>
+							<option value="7">Asvina</option>
+							<option value="8">Kartika</option>
+							<option value="9">Agrahayana</option>
+							<option value="10">Pausa</option>
+							<option value="11">Magha</option>
+							<option value="12">Phalguna</option>
+						</select></li>
+						<li><input type="number" id="icday" name="day" placeholder="day"></li>
+						<li><input type="number" id="icyear" name="year" placeholder="year"></li>
+						<!--<li><select name="weekday" id="pweekday"></select></li>-->
+					</ul>
+					<input type="submit" href="#" />
+				</form>
+			</div><!--}}}-->
 		</div>
 		<div id="about" class="selectable"><!--{{{-->
 			<p><img src="epoch.png" /></p>
@@ -270,13 +395,13 @@
 			<p>By <a href="mailto:support@pinedesk.biz">Dane Summers</a></p>
 			<p><br/><em>Convert one era's date to another.</em><br /></p>
 			<p>
-				The laundry list:
+			<b>The laundry list:</b>
 				<ol>
 					<li>copy/paste results</li>
 					<li>show leap years</li>
 					<li>better widgets for setting year</li>
 					<li>detect when an invalid day of month is selected</li>
-					<li>more calendars: Hebrew, Islamic, Persian, Indian, etc</li>
+					<li>more calendars: Islamic, Persian, Indian, etc</li>
 				</ol>
 			</p>
 			<p><br /><br /><a href="#" class="grayButton goback">Close</a></p>
