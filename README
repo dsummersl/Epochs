@@ -1,0 +1,33 @@
+--------------------------------------------------------------------------------
+ --                              Epochs                                      --
+--------------------------------------------------------------------------------
+
+Epochs is a simple 'mobile' all-client-side application that converts dates
+from one time format to another.
+
+Several formats are supported:
+ - Gregorian
+ - Julian
+ - Modified Julian
+ - Julian Calendar
+ - Hebrew
+ - Islamic
+ - Persian
+ - Indian Civil
+
+The app doesn't require any server side processing, as it does it all with
+javascript in the user's browser. Thus: super simple to put up on a website!
+
+--------------------------------------------------------------------------------
+
+The pages are built with:
+ - jquery
+ - jqtouch
+ - jspec
+ - John Walker's calendar.js and astro.js calendar libraries! 
+
+--------------------------------------------------------------------------------
+
+If you wanna see an example of the app running you can check it out here:
+
+http://epochs.pinedesk.biz
