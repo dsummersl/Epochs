@@ -1,557 +1,0 @@
-TCalendrical PhoneGap
-v7
-r0
-t309403693.183596
-cCheck dependencies
-cProcessInfoPlistFile "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Info.plist" Calendrical_PhoneGap-Info.plist
-cPhaseScriptExecution "Copy PhoneGap Javascript" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-30E9A9A110B758320022D3BA.sh"
-cPhaseScriptExecution "Touch www folder" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-304B58A110DAC018002A0835.sh"
-cCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/www" www
-cCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/VERSION" /Users/danesummers/Documents/PhoneGapLib/VERSION
-cCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/Default.png" Default.png
-cCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/icon.png" icon.png
-cCopyPlistFile "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGap.plist" PhoneGap.plist
-cCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGapBuildSettings.xcconfig" PhoneGapBuildSettings.xcconfig
-cProcessPCH /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Calendrical_PhoneGap_Prefix-cgcljnwlnmczlpejaicrugyrxqnc/Calendrical_PhoneGap_Prefix.pch.gch Calendrical_PhoneGap_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/main.o" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical_PhoneGapAppDelegate.o" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Classes/Calendrical_PhoneGapAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap" normal i386
-cGenerateDSYMFile "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app.dSYM" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap"
-cTouch "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
-c000000004C8546D90000000000000132
-t1283802841
-s306
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-c000000004C01F5AE00000000000C05A0
-t1275196846
-s787872
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
-c000000004C01F5AA000000000000065C
-t1275196842
-s1628
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
-c000000004BFF3B87000000000006F150
-t1275018119
-s454992
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AddressBook.framework/Headers/ABAddressBook.h
-c000000004BFF3B830000000000000A8C
-t1275018115
-s2700
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
-c000000004C04722E0000000000147690
-t1275359790
-s1341072
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AddressBookUI.framework/Headers/AddressBookUI.h
-c000000004C0472220000000000000202
-t1275359778
-s514
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c000000004BFF3B7600000000001C8900
-t1275018102
-s1870080
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioServices.h
-c000000004BFF3B620000000000010A78
-t1275018082
-s68216
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
-c000000004BFDFE57000000000018BC00
-t1274936919
-s1620992
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004BFDFE39000000000027C7D0
-t1274936889
-s2607056
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c000000004BFF44C00000000000068F90
-t1275020480
-s429968
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h
-c000000004BFF44B600000000000001D0
-t1275020470
-s464
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004BFDFE7C000000000029D5D0
-t1274936956
-s2741712
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004BFDFE6E0000000000001466
-t1274936942
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
-c000000004C0473250000000000155C80
-t1275360037
-s1399936
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-c000000004BFF3B790000000000055950
-t1275018105
-s350544
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c000000004C0458E90000000000151D30
-t1275353321
-s1383728
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-c000000004BFDFDAA000000000005E690
-t1274936746
-s386704
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004C0470BB00000000000009CD
-t1275359419
-s2509
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UINavigationController.h
-c000000004C0470BB0000000000001971
-t1275359419
-s6513
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITabBar.h
-c000000004C0470BB0000000000000BF1
-t1275359419
-s3057
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIToolbar.h
-c000000004C0470BB0000000000000704
-t1275359419
-s1796
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004C0471620000000001D47210
-t1275359586
-s30700048
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/Contacts.h
-c000000004CC0E2630000000000000ACE
-t1287709283
-s2766
-i<Foundation/Foundation.h>
-i<AddressBook/ABAddressBook.h>
-i<AddressBookUI/AddressBookUI.h>
-i"PhoneGapCommand.h"
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/DebugConsole.h
-c000000004CC0E2630000000000000170
-t1287709283
-s368
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-i"PhoneGapCommand.h"
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/JSON.h
-c000000004CC0E26300000000000008F9
-t1287709283
-s2297
-i"SBJSON.h"
-i"NSObject+SBJSON.h"
-i"NSString+SBJSON.h"
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/NSObject+SBJSON.h
-c000000004CC0E2630000000000000A01
-t1287709283
-s2561
-i<Foundation/Foundation.h>
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/NSString+SBJSON.h
-c000000004CC0E2630000000000000916
-t1287709283
-s2326
-i<Foundation/Foundation.h>
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/SBJSON.h
-c000000004CC0E2630000000000000AED
-t1287709283
-s2797
-i<Foundation/Foundation.h>
-i"SBJsonParser.h"
-i"SBJsonWriter.h"
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/SBJsonBase.h
-c000000004CC0E2630000000000000B82
-t1287709283
-s2946
-i<Foundation/Foundation.h>
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/SBJsonParser.h
-c000000004CC0E2630000000000000C0B
-t1287709283
-s3083
-i<Foundation/Foundation.h>
-i"SBJsonBase.h"
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/JSON/SBJsonWriter.h
-c000000004CC0E2630000000000001140
-t1287709283
-s4416
-i<Foundation/Foundation.h>
-i"SBJsonBase.h"
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/Location.h
-c000000004CC0E26300000000000005AB
-t1287709283
-s1451
-i<UIKit/UIKit.h>
-i<CoreLocation/CoreLocation.h>
-i"PhoneGapCommand.h"
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/PhoneGapCommand.h
-c000000004CC0E26300000000000002ED
-t1287709283
-s749
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/PhoneGapDelegate.h
-c000000004CC0E2630000000000000845
-t1287709283
-s2117
-i<UIKit/UIKit.h>
-i<CoreLocation/CoreLocation.h>
-i<UIKit/UINavigationController.h>
-i"JSON/JSON.h"
-i"Location.h"
-i"Sound.h"
-i"Contacts.h"
-i"DebugConsole.h"
-i"UIControls.h"
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/PhoneGapViewController.h
-c000000004CC0E26300000000000002F6
-t1287709283
-s758
-i<UIKit/UIKit.h>
-i<Foundation/Foundation.h>
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/Sound.h
-c000000004CC0E2630000000000000704
-t1287709283
-s1796
-i<Foundation/Foundation.h>
-i<AudioToolbox/AudioServices.h>
-i<AVFoundation/AVFoundation.h>
-i"PhoneGapCommand.h"
-
-N/Users/danesummers/Documents/PhoneGapLib/Classes/UIControls.h
-c000000004CC0E263000000000000066A
-t1287709283
-s1642
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-i<UIKit/UITabBar.h>
-i<UIKit/UIToolbar.h>
-i"PhoneGapCommand.h"
-
-N/Users/danesummers/Documents/PhoneGapLib/VERSION
-c000000004CC0E2630000000000000005
-t1287709283
-s5
-
-N/Users/danesummers/Documents/PhoneGapLib/build/Debug-iphonesimulator/libPhoneGapLib.a
-c000000004CC0E8AB0000000000126070
-t1287710891
-s1204336
-
-N/Users/danesummers/Documents/PhoneGapLib/build/Debug/libPhoneGapLib.a
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Calendrical_PhoneGap_Prefix.pch
-c000000004CC0E39600000000000000D1
-t1287709590
-s209
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Classes/Calendrical_PhoneGapAppDelegate.h
-c000000004CC0E396000000000000012C
-t1287709590
-s300
-i<UIKit/UIKit.h>
-i"PhoneGapDelegate.h"
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Classes/Calendrical_PhoneGapAppDelegate.m
-c000000004CC0E3960000000000000827
-t1287709590
-s2087
-i"Calendrical_PhoneGapAppDelegate.h"
-i"PhoneGapViewController.h"
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Default.png
-c000000004CC0E3960000000000000BAE
-t1287709590
-s2990
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/PhoneGap.plist
-c000000004CC0E396000000000000027E
-t1287709590
-s638
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/PhoneGapBuildSettings.xcconfig
-c000000004CC0E396000000000000008C
-t1287709590
-s140
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical PhoneGap.LinkFileList
-c000000004CC0E8AB0000000000000195
-t1287710891
-s405
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical_PhoneGapAppDelegate.o
-t1287710892
-s46716
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/main.o
-t1287710892
-s6580
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-304B58A110DAC018002A0835.sh
-c000000004CC0E8AB0000000000000027
-t1287710891
-s39
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-30E9A9A110B758320022D3BA.sh
-c000000004CC0E8AB00000000000000BE
-t1287710891
-s190
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app
-t1287710893
-s374
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app.dSYM
-t1287710893
-s102
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap
-t1287710893
-s304884
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Default.png
-t1287710891
-s2990
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Info.plist
-t1287710891
-s980
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGap.plist
-t1287710891
-s255
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGapBuildSettings.xcconfig
-t1287710891
-s140
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/PkgInfo
-t1287710891
-s8
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/VERSION
-t1287710891
-s5
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/icon.png
-t1287710891
-s3126
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/www
-t1287710891
-s272
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/icon.png
-c000000004CC0E3960000000000000C36
-t1287709590
-s3126
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/main.m
-c000000004CC0E3960000000000000196
-t1287709590
-s406
-i<UIKit/UIKit.h>
-
-N/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/www
-c000000004CC0E8AB0000000000000110
-t1287710891
-s272
-
-N/var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Calendrical_PhoneGap_Prefix-cgcljnwlnmczlpejaicrugyrxqnc/Calendrical_PhoneGap_Prefix.pch.gch
-t1287710892
-s15232016
-
-NCalendrical_PhoneGap-Info.plist
-c000000004CC0E8A700000000000005F9
-t1287710887
-s1529
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies309403691#309403691#0(0"0(0#1#0"8624986944#0"0#
-
-CCompileC "build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical_PhoneGapAppDelegate.o" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Classes/Calendrical_PhoneGapAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s309403692.688779
-e309403692.863724
-r1
-xCompileC
-xbuild/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical_PhoneGapAppDelegate.o
-x/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Classes/Calendrical_PhoneGapAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@129"Compile /Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Classes/Calendrical_PhoneGapAppDelegate.m309403692#309403692#0(0"0(0#0#121"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Classes/Calendrical_PhoneGapAppDelegate.m8625709472#3214"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-generated-files.hmap" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-own-target-headers.hmap" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-all-target-headers.hmap" -iquote "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-project-headers.hmap" "-F/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator" -iquote/Users/danesummers/Documents/PhoneGapLib/Classes/JSON -iquote/Users/danesummers/Documents/PhoneGapLib/Classes "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/include" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources/i386" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources" -include /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Calendrical_PhoneGap_Prefix-cgcljnwlnmczlpejaicrugyrxqnc/Calendrical_PhoneGap_Prefix.pch -c "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Classes/Calendrical_PhoneGapAppDelegate.m" -o "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical_PhoneGapAppDelegate.o"0#
-
-CCompileC "build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/main.o" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s309403692.687338
-e309403692.807435
-r1
-xCompileC
-xbuild/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/main.o
-x/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@94"Compile /Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/main.m309403692#309403692#0(0"0(0#0#86"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/main.m8601779584#3152"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-generated-files.hmap" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-own-target-headers.hmap" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-all-target-headers.hmap" -iquote "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-project-headers.hmap" "-F/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator" -iquote/Users/danesummers/Documents/PhoneGapLib/Classes/JSON -iquote/Users/danesummers/Documents/PhoneGapLib/Classes "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/include" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources/i386" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources" -include /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Calendrical_PhoneGap_Prefix-cgcljnwlnmczlpejaicrugyrxqnc/Calendrical_PhoneGap_Prefix.pch -c "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/main.m" -o "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/main.o"0#
-
-CCopyPlistFile "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGap.plist" PhoneGap.plist
-s309403691.848561
-e309403691.945422
-r1
-xCopyPlistFile
-x/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGap.plist
-xPhoneGap.plist
-lSLF07#2@19"Copy PhoneGap.plist309403691#309403691#0(0"0(0#0#94"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/PhoneGap.plist8623205760#889"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 PhoneGap.plist --outdir "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"0#
-
-CCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/Default.png" Default.png
-s309403691.846759
-e309403691.889886
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Calendrical PhoneGap.app/Default.png
-xDefault.png
-lSLF07#2@16"Copy Default.png309403691#309403691#0(0"0(0#0#91"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Default.png8623920704#998"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Default.png" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"0#
-
-CCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGapBuildSettings.xcconfig" PhoneGapBuildSettings.xcconfig
-s309403691.902637
-e309403691.909892
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Calendrical PhoneGap.app/PhoneGapBuildSettings.xcconfig
-xPhoneGapBuildSettings.xcconfig
-lSLF07#2@35"Copy PhoneGapBuildSettings.xcconfig309403691#309403691#0(0"0(0#0#110"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/PhoneGapBuildSettings.xcconfig8624700960#1017"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/PhoneGapBuildSettings.xcconfig" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"0#
-
-CCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/VERSION" /Users/danesummers/Documents/PhoneGapLib/VERSION
-s309403691.845616
-e309403691.876568
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Calendrical PhoneGap.app/VERSION
-x/Users/danesummers/Documents/PhoneGapLib/VERSION
-lSLF07#2@53"Copy /Users/danesummers/Documents/PhoneGapLib/VERSION309403691#309403691#0(0"0(0#0#48"/Users/danesummers/Documents/PhoneGapLib/VERSION8624961984#953"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/danesummers/Documents/PhoneGapLib/VERSION "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"0#
-
-CCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/icon.png" icon.png
-s309403691.847653
-e309403691.857528
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Calendrical PhoneGap.app/icon.png
-xicon.png
-lSLF07#2@13"Copy icon.png309403691#309403691#0(0"0(0#0#88"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/icon.png8623596256#995"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/icon.png" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"0#
-
-CCpResource "build/Debug-iphonesimulator/Calendrical PhoneGap.app/www" www
-s309403691.844655
-e309403691.902542
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Calendrical PhoneGap.app/www
-xwww
-lSLF07#2@8"Copy www309403691#309403691#0(0"0(0#0#83"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/www8626506656#990"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/www" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"0#
-
-CGenerateDSYMFile "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app.dSYM" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap"
-s309403693.045609
-e309403693.178736
-r1
-xGenerateDSYMFile
-x/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app.dSYM
-x/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap
-lSLF07#2@152"GenerateDSYMFile "build/Debug-iphonesimulator/Calendrical PhoneGap.app.dSYM" "build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap"309403693#309403693#0(0"0(0#0#153"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap8625001536#952"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /Developer/usr/bin/dsymutil "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap" -o "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app.dSYM"0#
-
-CLd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap" normal i386
-s309403692.863823
-e309403693.045485
-r1
-xLd
-x/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap
-xnormal
-xi386
-lSLF07#2@158"Link /Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap309403692#309403693#0(0"0(0#0#0"8619567520#1931"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk "-L/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator" "-F/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator" -filelist "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical PhoneGap.LinkFileList" -mmacosx-version-min=10.6 -all_load -Obj-C -Xlinker -objc_abi_version -Xlinker 2 /Users/danesummers/Documents/PhoneGapLib/build/Debug-iphonesimulator/libPhoneGapLib.a -framework Foundation -framework UIKit -framework CoreGraphics -framework AddressBook -framework AddressBookUI -framework AudioToolbox -framework AVFoundation -framework CFNetwork -framework CoreLocation -framework MediaPlayer -framework QuartzCore -framework SystemConfiguration -framework MobileCoreServices -o "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Calendrical PhoneGap"0#
-
-CPhaseScriptExecution "Copy PhoneGap Javascript" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-30E9A9A110B758320022D3BA.sh"
-s309403691.782582
-e309403691.821199
-r1
-xPhaseScriptExecution
-xCopy PhoneGap Javascript
-x/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-30E9A9A110B758320022D3BA.sh
-omake: Nothing to be done for `all'.
-ocp /Users/danesummers/Documents/PhoneGapLib/javascripts/phonegap.js /Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/www/phonegap.js
-lSLF07#2@50"Run custom shell script 'Copy PhoneGap Javascript'309403691#309403691#0(200"make: Nothing to be done for `all'.cp /Users/danesummers/Documents/PhoneGapLib/javascripts/phonegap.js /Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/www/phonegap.js2(13@36"make: Nothing to be done for `all'.309403691#0#36#0(1@0"0(13@164"cp /Users/danesummers/Documents/PhoneGapLib/javascripts/phonegap.js /Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/www/phonegap.js309403691#36#164#0(1@0"0(0#0#0"8616076608#20664"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv ACTION build    setenv ALTERNATE_GROUP danesummers    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER danesummers    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build"    setenv BUILD_ROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build"    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator"    setenv CACHE_ROOT /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502    setenv CCHROOT /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"    setenv CODE_SIGN_CONTEXT_CLASS XCCodeSignContext    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator"    setenv CONFIGURATION_TEMP_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator"    setenv CONTENTS_FOLDER_PATH "Calendrical PhoneGap.app"    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT "/tmp/Calendrical PhoneGap.dst"    setenv DWARF_DSYM_FILE_NAME "Calendrical PhoneGap.app.dSYM"    setenv DWARF_DSYM_FOLDER_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator"    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH "Calendrical PhoneGap.app/Executables"    setenv EXECUTABLE_FOLDER_PATH "Calendrical PhoneGap.app"    setenv EXECUTABLE_NAME "Calendrical PhoneGap"    setenv EXECUTABLE_PATH "Calendrical PhoneGap.app/Calendrical PhoneGap"    setenv FILE_LIST "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH "Calendrical PhoneGap.app/Frameworks"    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME "Calendrical PhoneGap.app"    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER Calendrical_PhoneGap_Prefix.pch    setenv GCC_PRODUCT_TYPE_PREPROCESSOR_DEFINITIONS " __IPHONE_OS_VERSION_MIN_REQUIRED=30200"    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_VERSION_IDENTIFIER __2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 502    setenv GROUP danesummers    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Calendrical_PhoneGap-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH "Calendrical PhoneGap.app/Info.plist"    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR "/tmp/Calendrical PhoneGap.dst/Users/danesummers/Applications"    setenv INSTALL_GROUP danesummers    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER danesummers    setenv INSTALL_PATH /Users/danesummers/Applications    setenv INSTALL_ROOT "/tmp/Calendrical PhoneGap.dst"    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH "Calendrical PhoneGap.app/Java"    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-LinkMap-normal-i386.txt"    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical PhoneGap.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_VERSION_ACTUAL 1064    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0604    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal"    setenv OBJROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build"    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-all_load -Obj-C"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH "Calendrical PhoneGap.app/pbdevelopment.plist"    setenv PFE_FILE_C_DIALECTS objective-c    setenv PHONEGAPLIB /Users/danesummers/Documents/PhoneGapLib    setenv PKGINFO_FILE_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/PkgInfo"    setenv PKGINFO_PATH "Calendrical PhoneGap.app/PkgInfo"    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH "Calendrical PhoneGap.app/PlugIns"    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH "Calendrical PhoneGap.app/PrivateHeaders"    setenv PRODUCT_NAME "Calendrical PhoneGap"    setenv PRODUCT_SETTINGS_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Calendrical_PhoneGap-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT "Calendrical PhoneGap"    setenv PROJECT_DERIVED_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/DerivedSources"    setenv PROJECT_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv PROJECT_FILE_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Calendrical PhoneGap.xcodeproj"    setenv PROJECT_NAME "Calendrical PhoneGap"    setenv PROJECT_TEMP_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build"    setenv PUBLIC_HEADERS_FOLDER_PATH "Calendrical PhoneGap.app/Headers"    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH "Calendrical PhoneGap.app/Scripts"    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk    setenv SDK_NAME iphonesimulator4.0    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/DerivedSources"    setenv SHARED_FRAMEWORKS_FOLDER_PATH "Calendrical PhoneGap.app/SharedFrameworks"    setenv SHARED_PRECOMPS_DIR /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH "Calendrical PhoneGap.app/SharedSupport"    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv SRCROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES 1    setenv SYMBOL_REPOSITORY_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/SymbolRepositories"    setenv SYMROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME "Calendrical PhoneGap"    setenv TARGET_BUILD_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator"    setenv TARGET_NAME "Calendrical PhoneGap"    setenv TARGET_TEMP_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build"    setenv TEMP_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build"    setenv TEMP_FILES_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build"    setenv TEMP_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build"    setenv TEMP_ROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build"    setenv UID 502    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH "Calendrical PhoneGap.app"    setenv UNSTRIPPED_PRODUCT NO    setenv USER danesummers    setenv USER_APPS_DIR /Users/danesummers/Applications    setenv USER_HEADER_SEARCH_PATHS "/Users/danesummers/Documents/PhoneGapLib/Classes/JSON /Users/danesummers/Documents/PhoneGapLib/Classes"    setenv USER_LIBRARY_DIR /Users/danesummers/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH "Calendrical PhoneGap.app/version.plist"    setenv VERSION_INFO_BUILDER danesummers    setenv VERSION_INFO_FILE "Calendrical PhoneGap_vers.c"    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Calendrical PhoneGap  PROJECT:Calendrical PhoneGap-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME "Calendrical PhoneGap.app"    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0323    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv i386 YES    /bin/sh -c "\"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-30E9A9A110B758320022D3BA.sh\""0#
-
-CPhaseScriptExecution "Touch www folder" "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-304B58A110DAC018002A0835.sh"
-s309403691.821311
-e309403691.844562
-r1
-xPhaseScriptExecution
-xTouch www folder
-x/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-304B58A110DAC018002A0835.sh
-lSLF07#2@42"Run custom shell script 'Touch www folder'309403691#309403691#0(0"0(0#0#0"8605840256#20664"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv ACTION build    setenv ALTERNATE_GROUP danesummers    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER danesummers    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build"    setenv BUILD_ROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build"    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator"    setenv CACHE_ROOT /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502    setenv CCHROOT /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"    setenv CODE_SIGN_CONTEXT_CLASS XCCodeSignContext    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator"    setenv CONFIGURATION_TEMP_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator"    setenv CONTENTS_FOLDER_PATH "Calendrical PhoneGap.app"    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT "/tmp/Calendrical PhoneGap.dst"    setenv DWARF_DSYM_FILE_NAME "Calendrical PhoneGap.app.dSYM"    setenv DWARF_DSYM_FOLDER_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator"    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH "Calendrical PhoneGap.app/Executables"    setenv EXECUTABLE_FOLDER_PATH "Calendrical PhoneGap.app"    setenv EXECUTABLE_NAME "Calendrical PhoneGap"    setenv EXECUTABLE_PATH "Calendrical PhoneGap.app/Calendrical PhoneGap"    setenv FILE_LIST "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH "Calendrical PhoneGap.app/Frameworks"    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME "Calendrical PhoneGap.app"    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER Calendrical_PhoneGap_Prefix.pch    setenv GCC_PRODUCT_TYPE_PREPROCESSOR_DEFINITIONS " __IPHONE_OS_VERSION_MIN_REQUIRED=30200"    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_VERSION_IDENTIFIER __2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 502    setenv GROUP danesummers    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Calendrical_PhoneGap-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH "Calendrical PhoneGap.app/Info.plist"    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR "/tmp/Calendrical PhoneGap.dst/Users/danesummers/Applications"    setenv INSTALL_GROUP danesummers    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER danesummers    setenv INSTALL_PATH /Users/danesummers/Applications    setenv INSTALL_ROOT "/tmp/Calendrical PhoneGap.dst"    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH "Calendrical PhoneGap.app/Java"    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-LinkMap-normal-i386.txt"    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal/i386/Calendrical PhoneGap.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_VERSION_ACTUAL 1064    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0604    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Objects-normal"    setenv OBJROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build"    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-all_load -Obj-C"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH "Calendrical PhoneGap.app/pbdevelopment.plist"    setenv PFE_FILE_C_DIALECTS objective-c    setenv PHONEGAPLIB /Users/danesummers/Documents/PhoneGapLib    setenv PKGINFO_FILE_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/PkgInfo"    setenv PKGINFO_PATH "Calendrical PhoneGap.app/PkgInfo"    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH "Calendrical PhoneGap.app/PlugIns"    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH "Calendrical PhoneGap.app/PrivateHeaders"    setenv PRODUCT_NAME "Calendrical PhoneGap"    setenv PRODUCT_SETTINGS_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Calendrical_PhoneGap-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT "Calendrical PhoneGap"    setenv PROJECT_DERIVED_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/DerivedSources"    setenv PROJECT_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv PROJECT_FILE_PATH "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Calendrical PhoneGap.xcodeproj"    setenv PROJECT_NAME "Calendrical PhoneGap"    setenv PROJECT_TEMP_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build"    setenv PUBLIC_HEADERS_FOLDER_PATH "Calendrical PhoneGap.app/Headers"    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH "Calendrical PhoneGap.app/Scripts"    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk    setenv SDK_NAME iphonesimulator4.0    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/DerivedSources"    setenv SHARED_FRAMEWORKS_FOLDER_PATH "Calendrical PhoneGap.app/SharedFrameworks"    setenv SHARED_PRECOMPS_DIR /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH "Calendrical PhoneGap.app/SharedSupport"    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv SRCROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES 1    setenv SYMBOL_REPOSITORY_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/SymbolRepositories"    setenv SYMROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME "Calendrical PhoneGap"    setenv TARGET_BUILD_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator"    setenv TARGET_NAME "Calendrical PhoneGap"    setenv TARGET_TEMP_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build"    setenv TEMP_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build"    setenv TEMP_FILES_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build"    setenv TEMP_FILE_DIR "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build"    setenv TEMP_ROOT "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build"    setenv UID 502    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH "Calendrical PhoneGap.app"    setenv UNSTRIPPED_PRODUCT NO    setenv USER danesummers    setenv USER_APPS_DIR /Users/danesummers/Applications    setenv USER_HEADER_SEARCH_PATHS "/Users/danesummers/Documents/PhoneGapLib/Classes/JSON /Users/danesummers/Documents/PhoneGapLib/Classes"    setenv USER_LIBRARY_DIR /Users/danesummers/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH "Calendrical PhoneGap.app/version.plist"    setenv VERSION_INFO_BUILDER danesummers    setenv VERSION_INFO_FILE "Calendrical PhoneGap_vers.c"    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Calendrical PhoneGap  PROJECT:Calendrical PhoneGap-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME "Calendrical PhoneGap.app"    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0323    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv i386 YES    /bin/sh -c "\"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Script-304B58A110DAC018002A0835.sh\""0#
-
-CProcessInfoPlistFile "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Info.plist" Calendrical_PhoneGap-Info.plist
-s309403691.778672
-e309403691.782477
-r1
-xProcessInfoPlistFile
-x/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Info.plist
-xCalendrical_PhoneGap-Info.plist
-lSLF07#2@39"Process Calendrical_PhoneGap-Info.plist309403691#309403691#0(0"0(0#0#111"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Calendrical_PhoneGap-Info.plist8619860576#1048"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    builtin-infoPlistUtility Calendrical_PhoneGap-Info.plist -genpkginfo "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app/Info.plist"0#
-
-CProcessPCH /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Calendrical_PhoneGap_Prefix-cgcljnwlnmczlpejaicrugyrxqnc/Calendrical_PhoneGap_Prefix.pch.gch Calendrical_PhoneGap_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s309403691.945552
-e309403692.686025
-r1
-xProcessPCH
-x/var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Calendrical_PhoneGap_Prefix-cgcljnwlnmczlpejaicrugyrxqnc/Calendrical_PhoneGap_Prefix.pch.gch
-xCalendrical_PhoneGap_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@42"Precompile Calendrical_PhoneGap_Prefix.pch309403691#309403692#0(0"0(0#0#111"/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Calendrical_PhoneGap_Prefix.pch8623264832#2988"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-generated-files.hmap" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-own-target-headers.hmap" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-all-target-headers.hmap" -iquote "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/Calendrical PhoneGap-project-headers.hmap" "-F/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator" -iquote/Users/danesummers/Documents/PhoneGapLib/Classes/JSON -iquote/Users/danesummers/Documents/PhoneGapLib/Classes "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/include" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources/i386" "-I/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Calendrical PhoneGap.build/Debug-iphonesimulator/Calendrical PhoneGap.build/DerivedSources" -c "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/Calendrical_PhoneGap_Prefix.pch" -o /var/folders/--/--mtqYMF2ReU-k+F7BrCr++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Calendrical_PhoneGap_Prefix-cgcljnwlnmczlpejaicrugyrxqnc/Calendrical_PhoneGap_Prefix.pch.gch0#
-
-CTouch "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"
-s309403693.178833
-e309403693.183541
-r1
-xTouch
-x/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app
-lSLF07#2@138"Touch /Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app309403693#309403693#0(0"0(0#0#0"8623325696#778"    cd "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/local/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/Users/danesummers/Documents/Java/ec2-api-tools-1.3-42584/bin:/Users/danesummers/Documents/Java/groovy-1.7.0/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin:/Users/danesummers/Documents/Java/griffon-0.9/bin"    /usr/bin/touch -c "/Users/danesummers/Documents/PineDesk/calendrical-phonegap/Calendrical PhoneGap/build/Debug-iphonesimulator/Calendrical PhoneGap.app"0#
-
