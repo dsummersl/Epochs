@@ -1,7 +1,0 @@
-//
-//  PhoneGap.xcconfig
-//  Calendrical PhoneGap
-//
-
-// Override this to use your project specific PHONEGAPLIB
-PHONEGAPLIB = $(PHONEGAPLIB)
