@@ -127,285 +127,290 @@
 		</script>
 	</head>
 	<body>
-		<div id="home">
-			<div class="toolbar">
-				<h1>Epochs</h1>
-				<a href="#about" class="button leftButton flip">About</a>
-				<!--<a href="#add" class="button add slideup">+</a>-->
-			</div>
-			<div id="convertFrom"></div>
-			<div id="fromForm"></div>
-			<hr />
-			<div id="convertTo"></div>
-			<div id="results">
-			</div>
-		</div>
-		<div id="forms">
-			<div id="gregorianform"><!--{{{-->
-				<form id="gtime">
-					<ul class="rounded">
-						<li><select name="month" id="gmonth">
-							<!--<option value="0.0" selected>(GMT) Western Europe Time</option>-->
-							<option value="1">January</option>
-							<option value="2">Febuary</option>
-							<option value="3">March</option>
-							<option value="4">April</option>
-							<option value="5">May</option>
-							<option value="6">June</option>
-							<option value="7">July</option>
-							<option value="8">August</option>
-							<option value="9">September</option>
-							<option value="10">October</option>
-							<option value="11">November</option>
-							<option value="12">December</option>
-						</select></li>
-						<!-- TODO determine the proper number of days for the given month/year -->
-						<li><select name="day" id="gday">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-							<option value="12">12</option>
-							<option value="13">13</option>
-							<option value="14">14</option>
-							<option value="15">15</option>
-							<option value="16">16</option>
-							<option value="17">17</option>
-							<option value="18">18</option>
-							<option value="19">19</option>
-							<option value="20">20</option>
-							<option value="21">21</option>
-							<option value="22">22</option>
-							<option value="23">23</option>
-							<option value="24">24</option>
-							<option value="25">25</option>
-							<option value="26">26</option>
-							<option value="27">27</option>
-							<option value="28">28</option>
-							<option value="29">29</option>
-							<option value="30">30</option>
-							<option value="31">31</option>
-						</select></li>
-						<li><input type="number" id="gyear" name="year" placeholder="year"></li>
-						<li><select name="weekday" id="gweekday"></select></li>
-					</ul>
-					<input type="submit" href="#" />
-				</form>
-			</div><!--}}}-->
-			<div id="julianform"><!--{{{-->
-				<form id="jtime">
-					<ul class="rounded">
-						<li><input type="number" id="jday" name="day" placeholder="day"></li>
-						<li><select name="weekday" id="jweekday"></select></li>
-					</ul>
-					<input type="submit" href="#" />
-				</form>
-			</div><!--}}}-->
-			<div id="modifiedjulianform"><!--{{{-->
-				<form id="mjtime">
-					<ul class="rounded">
-						<li><input type="number" id="mjday" name="day" placeholder="day"></li>
-						<li><select name="weekday" id="mjweekday"></select></li>
-					</ul>
-					<input type="submit" href="#" />
-				</form>
-			</div><!--}}}-->
-			<div id="juliancalendarform"><!--{{{-->
-				<form id="jctime">
-					<ul class="rounded">
-						<li><select name="month" id="jcmonth">
-							<!--<option value="0.0" selected>(GMT) Western Europe Time</option>-->
-							<option value="1">January</option>
-							<option value="2">Febuary</option>
-							<option value="3">March</option>
-							<option value="4">April</option>
-							<option value="5">May</option>
-							<option value="6">June</option>
-							<option value="7">July</option>
-							<option value="8">August</option>
-							<option value="9">September</option>
-							<option value="10">October</option>
-							<option value="11">November</option>
-							<option value="12">December</option>
-						</select></li>
-						<!-- TODO determine the proper number of days for the given month/year -->
-						<li><select name="day" id="jcday">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-							<option value="12">12</option>
-							<option value="13">13</option>
-							<option value="14">14</option>
-							<option value="15">15</option>
-							<option value="16">16</option>
-							<option value="17">17</option>
-							<option value="18">18</option>
-							<option value="19">19</option>
-							<option value="20">20</option>
-							<option value="21">21</option>
-							<option value="22">22</option>
-							<option value="23">23</option>
-							<option value="24">24</option>
-							<option value="25">25</option>
-							<option value="26">26</option>
-							<option value="27">27</option>
-							<option value="28">28</option>
-							<option value="29">29</option>
-							<option value="30">30</option>
-							<option value="31">31</option>
-						</select></li>
-						<li><input type="number" id="jcyear" name="year" placeholder="year"></li>
-						<li><select name="weekday" id="jcweekday"></select></li>
-					</ul>
-					<input type="submit" href="#" />
-				</form>
-			</div><!--}}}-->
-			<div id="hebrewform"><!--{{{-->
-				<form id="htime">
-					<ul class="rounded">
-						<li><select name="month" id="hmonth">
-							<option value="1">Nisan</option>
-							<option value="2">Iyar</option>
-							<option value="3">Sivan</option>
-							<option value="4">Tammuz</option>
-							<option value="5">Av</option>
-							<option value="6">Elul</option>
-							<option value="7">Tishri</option>
-							<option value="8">Heshvan</option>
-							<option value="9">Kislev</option>
-							<option value="10">Teveth</option>
-							<option value="11">Shevat</option>
-							<option value="12">Adar</option>
-							<option value="13">Veadar</option>
-							<!--
-							<option value="1">Nisan (נִיסָן‎)</option>
-							<option value="2">Iyar (אִייָר)</option>
-							<option value="3">Sivan (סִיוָן)</option>
-							<option value="4">Tammuz (תמוז)</option>
-							<option value="5">Av (אָב)</option>
-							<option value="6">Elul (אֱלוּל)</option>
-							<option value="7">Tishri (תִּשְׁרִי)</option>
-							<option value="8">Cheshvan (חֶשְׁוָן)</option>
-							<option value="9">Kislev ( (כִּסְלֵו)</option>
-							<option value="10">Teveth (טֵבֵת)</option>
-							<option value="11">Shevat (שְׁבָט)</option>
-							<option value="12">Adar (אֲדָר)</option>
-							<option value="13">Veadar </option>
-							-->
-						</select></li>
-						<!-- TODO determine the proper number of days for the given month/year -->
-						<li><input type="number" id="hday" name="day" placeholder="day"></li>
-						<li><input type="number" id="hyear" name="year" placeholder="year"></li>
-						<!--<li><select name="weekday" id="hweekday"></select></li>-->
-					</ul>
-					<input type="submit" href="#" />
-				</form>
-			</div><!--}}}-->
-			<div id="islamicform"><!--{{{-->
-				<form id="itime">
-					<ul class="rounded">
-						<li><select name="month" id="imonth">
-							<option value="1">Muharram</option>
-							<option value="2">Safar</option>
-							<option value="3">Rabi`al-Awwal</option>
-							<option value="4">Rabi`ath-Thani</option>
-							<option value="5">Jumada l-Ula</option>
-							<option value="6">Jumada t-Tania</option>
-							<option value="7">Rajab</option>
-							<option value="8">Sha`ban</option>
-							<option value="9">Ramadan</option>
-							<option value="10">Shawwal</option>
-							<option value="11">Dhu l-Qa`da</option>
-							<option value="12">Dhu l-Hijja</option>
-						</select></li>
-						<li><input type="number" id="iday" name="day" placeholder="day"></li>
-						<li><input type="number" id="iyear" name="year" placeholder="year"></li>
-						<!--<li><select name="weekday" id="hweekday"></select></li>-->
-					</ul>
-					<input type="submit" href="#" />
-				</form>
-			</div><!--}}}-->
-			<div id="persianform"><!--{{{-->
-				<form id="ptime">
-					<ul class="rounded">
-						<li><select name="month" id="pmonth">
-							<option value="1">Farvardin</option>
-							<option value="2">Ordibehesht</option>
-							<option value="3">Khordad</option>
-							<option value="4">Tir</option>
-							<option value="5">Mordad</option>
-							<option value="6">Shahrivar</option>
-							<option value="7">Mehr</option>
-							<option value="8">Aban</option>
-							<option value="9">Azar</option>
-							<option value="10">Dey</option>
-							<option value="11">Bahman</option>
-							<option value="12">Esfand</option>
-						</select></li>
-						<li><input type="number" id="pday" name="day" placeholder="day"></li>
-						<li><input type="number" id="pyear" name="year" placeholder="year"></li>
-						<!--<li><select name="weekday" id="pweekday"></select></li>-->
-					</ul>
-					<input type="submit" href="#" />
-				</form>
-			</div><!--}}}-->
-			<div id="indianform"><!--{{{-->
-				<form id="ictime">
-					<ul class="rounded">
-						<li><select name="month" id="icmonth">
-							<option value="1">Caitra</option>
-							<option value="2">Vaisakha</option>
-							<option value="3">Jyaistha</option>
-							<option value="4">Asadha</option>
-							<option value="5">Sravana</option>
-							<option value="6">Bhadra</option>
-							<option value="7">Asvina</option>
-							<option value="8">Kartika</option>
-							<option value="9">Agrahayana</option>
-							<option value="10">Pausa</option>
-							<option value="11">Magha</option>
-							<option value="12">Phalguna</option>
-						</select></li>
-						<li><input type="number" id="icday" name="day" placeholder="day"></li>
-						<li><input type="number" id="icyear" name="year" placeholder="year"></li>
-						<!--<li><select name="weekday" id="pweekday"></select></li>-->
-					</ul>
-					<input type="submit" href="#" />
-				</form>
-			</div><!--}}}-->
-		</div>
-		<div id="about" class="selectable"><!--{{{-->
-			<p><img src="epoch.png" /></p>
-			<p><strong>Epochs</strong><br />Version 0.4 beta (June 7, 2012)<br /> </p>
-			<p>By <a href="mailto:support@pinedesk.biz">Dane Summers</a></p>
-			<p><br/><em>Convert one era's date to another.</em><br /></p>
-			<p>
-			<b>The laundry list:</b>
-				<ol>
-					<li>copy/paste results</li>
-					<li>show leap years</li>
-					<li>better widgets for setting year</li>
-					<li>detect when an invalid day of month is selected</li>
-					<li>more calendars!</li>
-				</ol>
-			</p>
-			<p><br /><br /><a href="#" class="grayButton goback">Close</a></p>
-		</div><!--}}}-->
+    <div id="jqt">
+      <div id="home">
+        <div class="toolbar">
+          <h1>Epochs</h1>
+          <a href="#about" class="button leftButton flip">About</a>
+          <!--<a href="#add" class="button add slideup">+</a>-->
+        </div>
+        <div id="convertFrom"></div>
+        <div id="fromForm"></div>
+        <hr />
+        <div id="convertTo"></div>
+        <div id="results">
+        </div>
+      </div>
+      <div id="forms">
+        <div id="gregorianform"><!--{{{-->
+          <form id="gtime">
+            <ul class="rounded">
+              <li><select name="month" id="gmonth">
+                <!--<option value="0.0" selected>(GMT) Western Europe Time</option>-->
+                <option value="1">January</option>
+                <option value="2">Febuary</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select></li>
+              <!-- TODO determine the proper number of days for the given month/year -->
+              <li><select name="day" id="gday">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select></li>
+              <!--
+              Can't use type number b/c it formats it incorrectly: http://stackoverflow.com/questions/5345095/chrome-auto-formats-input-number
+              -->
+              <li><input type="text" id="gyear" name="year" placeholder="2012"></li>
+              <li><select name="weekday" id="gweekday"></select></li>
+            </ul>
+            <input type="submit" href="#" />
+          </form>
+        </div><!--}}}-->
+        <div id="julianform"><!--{{{-->
+          <form id="jtime">
+            <ul class="rounded">
+              <li><input type="number" id="jday" name="day" placeholder="day"></li>
+              <li><select name="weekday" id="jweekday"></select></li>
+            </ul>
+            <input type="submit" href="#" />
+          </form>
+        </div><!--}}}-->
+        <div id="modifiedjulianform"><!--{{{-->
+          <form id="mjtime">
+            <ul class="rounded">
+              <li><input type="number" id="mjday" name="day" placeholder="day"></li>
+              <li><select name="weekday" id="mjweekday"></select></li>
+            </ul>
+            <input type="submit" href="#" />
+          </form>
+        </div><!--}}}-->
+        <div id="juliancalendarform"><!--{{{-->
+          <form id="jctime">
+            <ul class="rounded">
+              <li><select name="month" id="jcmonth">
+                <!--<option value="0.0" selected>(GMT) Western Europe Time</option>-->
+                <option value="1">January</option>
+                <option value="2">Febuary</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select></li>
+              <!-- TODO determine the proper number of days for the given month/year -->
+              <li><select name="day" id="jcday">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select></li>
+              <li><input type="text" id="jcyear" name="year" placeholder="year"></li>
+              <li><select name="weekday" id="jcweekday"></select></li>
+            </ul>
+            <input type="submit" href="#" />
+          </form>
+        </div><!--}}}-->
+        <div id="hebrewform"><!--{{{-->
+          <form id="htime">
+            <ul class="rounded">
+              <li><select name="month" id="hmonth">
+                <option value="1">Nisan</option>
+                <option value="2">Iyar</option>
+                <option value="3">Sivan</option>
+                <option value="4">Tammuz</option>
+                <option value="5">Av</option>
+                <option value="6">Elul</option>
+                <option value="7">Tishri</option>
+                <option value="8">Heshvan</option>
+                <option value="9">Kislev</option>
+                <option value="10">Teveth</option>
+                <option value="11">Shevat</option>
+                <option value="12">Adar</option>
+                <option value="13">Veadar</option>
+                <!--
+                <option value="1">Nisan (נִיסָן‎)</option>
+                <option value="2">Iyar (אִייָר)</option>
+                <option value="3">Sivan (סִיוָן)</option>
+                <option value="4">Tammuz (תמוז)</option>
+                <option value="5">Av (אָב)</option>
+                <option value="6">Elul (אֱלוּל)</option>
+                <option value="7">Tishri (תִּשְׁרִי)</option>
+                <option value="8">Cheshvan (חֶשְׁוָן)</option>
+                <option value="9">Kislev ( (כִּסְלֵו)</option>
+                <option value="10">Teveth (טֵבֵת)</option>
+                <option value="11">Shevat (שְׁבָט)</option>
+                <option value="12">Adar (אֲדָר)</option>
+                <option value="13">Veadar </option>
+                -->
+              </select></li>
+              <!-- TODO determine the proper number of days for the given month/year -->
+              <li><input type="number" id="hday" name="day" placeholder="day"></li>
+              <li><input type="text" id="hyear" name="year" placeholder="year"></li>
+              <!--<li><select name="weekday" id="hweekday"></select></li>-->
+            </ul>
+            <input type="submit" href="#" />
+          </form>
+        </div><!--}}}-->
+        <div id="islamicform"><!--{{{-->
+          <form id="itime">
+            <ul class="rounded">
+              <li><select name="month" id="imonth">
+                <option value="1">Muharram</option>
+                <option value="2">Safar</option>
+                <option value="3">Rabi`al-Awwal</option>
+                <option value="4">Rabi`ath-Thani</option>
+                <option value="5">Jumada l-Ula</option>
+                <option value="6">Jumada t-Tania</option>
+                <option value="7">Rajab</option>
+                <option value="8">Sha`ban</option>
+                <option value="9">Ramadan</option>
+                <option value="10">Shawwal</option>
+                <option value="11">Dhu l-Qa`da</option>
+                <option value="12">Dhu l-Hijja</option>
+              </select></li>
+              <li><input type="number" id="iday" name="day" placeholder="day"></li>
+              <li><input type="text" id="iyear" name="year" placeholder="year"></li>
+              <!--<li><select name="weekday" id="hweekday"></select></li>-->
+            </ul>
+            <input type="submit" href="#" />
+          </form>
+        </div><!--}}}-->
+        <div id="persianform"><!--{{{-->
+          <form id="ptime">
+            <ul class="rounded">
+              <li><select name="month" id="pmonth">
+                <option value="1">Farvardin</option>
+                <option value="2">Ordibehesht</option>
+                <option value="3">Khordad</option>
+                <option value="4">Tir</option>
+                <option value="5">Mordad</option>
+                <option value="6">Shahrivar</option>
+                <option value="7">Mehr</option>
+                <option value="8">Aban</option>
+                <option value="9">Azar</option>
+                <option value="10">Dey</option>
+                <option value="11">Bahman</option>
+                <option value="12">Esfand</option>
+              </select></li>
+              <li><input type="number" id="pday" name="day" placeholder="day"></li>
+              <li><input type="text" id="pyear" name="year" placeholder="year"></li>
+              <!--<li><select name="weekday" id="pweekday"></select></li>-->
+            </ul>
+            <input type="submit" href="#" />
+          </form>
+        </div><!--}}}-->
+        <div id="indianform"><!--{{{-->
+          <form id="ictime">
+            <ul class="rounded">
+              <li><select name="month" id="icmonth">
+                <option value="1">Caitra</option>
+                <option value="2">Vaisakha</option>
+                <option value="3">Jyaistha</option>
+                <option value="4">Asadha</option>
+                <option value="5">Sravana</option>
+                <option value="6">Bhadra</option>
+                <option value="7">Asvina</option>
+                <option value="8">Kartika</option>
+                <option value="9">Agrahayana</option>
+                <option value="10">Pausa</option>
+                <option value="11">Magha</option>
+                <option value="12">Phalguna</option>
+              </select></li>
+              <li><input type="number" id="icday" name="day" placeholder="day"></li>
+              <li><input type="text" id="icyear" name="year" placeholder="year"></li>
+              <!--<li><select name="weekday" id="pweekday"></select></li>-->
+            </ul>
+            <input type="submit" href="#" />
+          </form>
+        </div><!--}}}-->
+      </div>
+      <div id="about" class="selectable"><!--{{{-->
+        <p><img src="epoch.png" /></p>
+        <p><strong>Epochs</strong><br />Version 0.4 beta (June 7, 2012)<br /> </p>
+        <p>By <a href="mailto:support@pinedesk.biz">Dane Summers</a></p>
+        <p><br/><em>Convert one era's date to another.</em><br /></p>
+        <p>
+        <b>The laundry list:</b>
+          <ol>
+            <li>copy/paste results</li>
+            <li>show leap years</li>
+            <li>better widgets for setting year</li>
+            <li>detect when an invalid day of month is selected</li>
+            <li>more calendars!</li>
+          </ol>
+        </p>
+        <p><br /><br /><a href="#" class="grayButton goback">Close</a></p>
+      </div><!--}}}-->
+    </div>
 	</body>
 	<!-- vim: set fdm=marker ai: -->
 </html>

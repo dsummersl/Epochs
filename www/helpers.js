@@ -31,6 +31,15 @@ function setResults(appendTo,gregorianDate,calendarType) {
 	$(appendTo).append(insert);
 }
 
+
+function validateYear(fieldName,revertToYear) {
+  if (!$(fieldName).val().match(/^\d+$/)) {
+    $(fieldName).val(revertToYear);
+    return false;
+  }
+  return true;
+}
+
 // modify these three sections to add a new date conversion type:
 var implementations = {
 	gregorian: new function() {//{{{
@@ -57,7 +66,9 @@ var implementations = {
 		this.updateFromHTML = function() {
 			var gd;
 			var j = gregorian_to_jd(thedate.year, thedate.month, thedate.day);
-			if ($('#gyear').val() == thedate.year && $('#gmonth').val() == thedate.month && $('#gday').val() == thedate.day && $('#gweekday[value]').val() != j) {
+      if (!validateYear('#gyear',thedate.year)) { return false; }
+      console.log("3");
+			if ($('#gyear').val() === thedate.year && $('#gmonth').val() === thedate.month && $('#gday').val() === thedate.day && $('#gweekday[value]').val() !== j) {
 				// the weekday changed, recompute from this julian day
 				gd = jd_to_gregorian($('#gweekday').val());
 			}
@@ -158,6 +169,7 @@ var implementations = {
 			addWeekdayTags($('#jcweekday'),julian,jcDesc);
 		};
 		this.updateFromHTML = function() {
+      if (!validateYear('#jcyear',thedate.year)) { return false; }
 			var julianday = julian_to_jd(Number($('#jcyear').val()),Number($('#jcmonth').val()),Number($('#jcday').val()));
 			var newgreg = jd_to_gregorian(julianday);
 			if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jcweekday[value]').val() != julianday) {
@@ -206,6 +218,9 @@ var implementations = {
 			//addWeekdayTags($('#jcweekday'),julian,frDesc);
 		};
 		this.updateFromHTML = function() {
+			var julian = gregorian_to_jd(thedate.year, thedate.month, thedate.day);
+			var hcal = jd_to_hebrew(julian);
+      if (!validateYear('#hyear',hcal[0])) { return false; }
 			var julianday = hebrew_to_jd(Number($('#hyear').val()),Number($('#hmonth').val()),Number($('#hday').val()));
 			var newgreg = jd_to_gregorian(julianday);
 			//if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jcweekday[value]').val() != julianday) {
@@ -246,6 +261,9 @@ var implementations = {
 			//addWeekdayTags($('#jcweekday'),julian,frDesc);
 		};
 		this.updateFromHTML = function() {
+			var julian = gregorian_to_jd(thedate.year, thedate.month, thedate.day);
+			var hcal = jd_to_islamic(julian);
+      if (!validateYear('#iyear',hcal[0])) { return false; }
 			var julianday = islamic_to_jd(Number($('#iyear').val()),Number($('#imonth').val()),Number($('#iday').val()));
 			var newgreg = jd_to_gregorian(julianday);
 			//if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jcweekday[value]').val() != julianday) {
@@ -278,14 +296,17 @@ var implementations = {
 		};
 		this.updateForm = function (gregorianDate) {
 			var julian = gregorian_to_jd(gregorianDate.year, gregorianDate.month, gregorianDate.day);
-			var hcal = jd_to_persiana(julian);
-			$('#pyear').val(hcal[0]);
-			$('#pmonth').val(Number(hcal[1]));
-			$('#pday').val(hcal[2]);
+			var ical = jd_to_persiana(julian);
+			$('#pyear').val(ical[0]);
+			$('#pmonth').val(Number(ical[1]));
+			$('#pday').val(ical[2]);
 			// TODO update the days in the month correctly.
 			//addWeekdayTags($('#jcweekday'),julian,frDesc);
 		};
 		this.updateFromHTML = function() {
+			var julian = gregorian_to_jd(thedate.year, thedate.month, thedate.day);
+			var ical = jd_to_persiana(julian);
+      if (!validateYear('#pyear',ical[0])) { return false; }
 			var julianday = persiana_to_jd(Number($('#pyear').val()),Number($('#pmonth').val()),Number($('#pday').val()));
 			var newgreg = jd_to_gregorian(julianday);
 			//if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jcweekday[value]').val() != julianday) {
@@ -326,6 +347,9 @@ var implementations = {
 			//addWeekdayTags($('#jcweekday'),julian,frDesc);
 		};
 		this.updateFromHTML = function() {
+			var julian = gregorian_to_jd(thedate.year, thedate.month, thedate.day);
+			var hcal = jd_to_indian_civil(julian);
+      if (!validateYear('#icyear',hcal[0])) { return false; }
 			var julianday = indian_civil_to_jd(Number($('#icyear').val()),Number($('#icmonth').val()),Number($('#icday').val()));
 			var newgreg = jd_to_gregorian(julianday);
 			//if (newgreg[0] == thedate.year && newgreg[1] == thedate.month && newgreg[2] == thedate.day && $('#jcweekday[value]').val() != julianday) {
